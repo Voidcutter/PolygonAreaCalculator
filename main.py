@@ -34,8 +34,7 @@ class Rectangle:
         return h_num * w_num
 
     def __str__(self):
-        temp = Rectangle(5, 10)
-        return temp.get_picture()
+        return f'Rectangle(width={self.width}, height={self.height})'
 
 class Square(Rectangle):
 
@@ -56,6 +55,4 @@ class Square(Rectangle):
         self.width = height
 
     def __str__(self):
-        temp = Square(9)
-        return temp.get_picture()
-    
+        return f'Square(side={self.height})'
